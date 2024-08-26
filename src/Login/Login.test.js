@@ -59,7 +59,7 @@ describe('Login Component', () => {
     fireEvent.change(screen.getByLabelText(/password/i), { target: { value: 'credentials' } });
     fireEvent.click(screen.getByText(/login/i));
 
-    expect(window.alert).toHaveBeenCalledWith('Invalid credentials');
+    expect(window.alert).toHaveBeenCalledWith('Invalid credentials provided');
     expect(mockedNavigate).not.toHaveBeenCalled();
   });
 });
