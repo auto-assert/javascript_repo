@@ -1,3 +1,4 @@
+```javascript
 // src/App.test.js
 import React from 'react';
 import { render, screen } from '@testing-library/react';
@@ -19,21 +20,58 @@ describe('App', () => {
     expect(screen.getByText('Login Component')).toBeInTheDocument();
   });
 
-  // test('renders Dashboard component for the /dashboard path', () => {
-  //   render(
-  //     <MemoryRouter initialEntries={['/dashboard']}>
-  //       <App />
-  //     </MemoryRouter>
-  //   );
-  //   expect(screen.getByText('Dashboard Component')).toBeInTheDocument();
-  // });
+  test('renders Dashboard component for the /dashboard path', () => {
+    render(
+      <MemoryRouter initialEntries={['/dashboard']}>
+        <App />
+      </MemoryRouter>
+    );
+    expect(screen.getByText('Dashboard Component')).toBeInTheDocument();
+  });
 
-  // test('renders Login component for an unknown path', () => {
-  //   render(
-  //     <MemoryRouter initialEntries={['/unknown']}>
-  //       <App />
-  //     </MemoryRouter>
-  //   );
-  //   expect(screen.getByText('Login Component')).toBeInTheDocument();
-  // });
+  test('renders Login component for an unknown path', () => {
+    render(
+      <MemoryRouter initialEntries={['/unknown']}>
+        <App />
+      </MemoryRouter>
+    );
+    expect(screen.getByText('Login Component')).toBeInTheDocument();
+  });
+
+  test('renders Login component for the /login path', () => {
+    render(
+      <MemoryRouter initialEntries={['/login']}>
+        <App />
+      </MemoryRouter>
+    );
+    expect(screen.getByText('Login Component')).toBeInTheDocument();
+  });
+
+  test('renders Dashboard component for the /dashboard path with exact match', () => {
+    render(
+      <MemoryRouter initialEntries={['/dashboard']}>
+        <App />
+      </MemoryRouter>
+    );
+    expect(screen.getByText('Dashboard Component')).toBeInTheDocument();
+  });
+
+  test('renders Login component for a path with query parameters', () => {
+    render(
+      <MemoryRouter initialEntries={['/?query=param']}>
+        <App />
+      </MemoryRouter>
+    );
+    expect(screen.getByText('Login Component')).toBeInTheDocument();
+  });
+
+  test('renders Login component for a path with hash', () => {
+    render(
+      <MemoryRouter initialEntries={['/#hash']}>
+        <App />
+      </MemoryRouter>
+    );
+    expect(screen.getByText('Login Component')).toBeInTheDocument();
+  });
 });
+```
