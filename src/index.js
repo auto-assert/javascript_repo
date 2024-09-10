@@ -1,19 +1,13 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import './index.css';
-import App from './App/App';
-import reportWebVitals from './reportWebVitals';
-
-const container = document.getElementById('root');
-const root = createRoot(container);
-
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgY3JlYXRlUm9v
+dCB9IGZyb20gJ3JlYWN0LWRvbS9jbGllbnQnOwppbXBvcnQgJy4vaW5kZXgu
+Y3NzJzsKaW1wb3J0IEFwcCBmcm9tICcuL0FwcC9BcHAnOwppbXBvcnQgcmVw
+b3J0V2ViVml0YWxzIGZyb20gJy4vcmVwb3J0V2ViVml0YWxzJzsKCmNvbnN0
+IGNvbnRhaW5lciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290Jyk7
+CmNvbnN0IHJvb3QgPSBjcmVhdGVSb290KGNvbnRhaW5lcik7Cgpyb290LnJl
+bmRlcigKICA8UmVhY3QuU3RyaWN0TW9kZT4KICAgIDxBcHAgLz4KICA8L1Jl
+YWN0LlN0cmljdE1vZGU+Cik7CgovLyBJZiB5b3Ugd2FudCB0byBzdGFydCBt
+ZWFzdXJpbmcgcGVyZm9ybWFuY2UgaW4geW91ciBhcHAsIHBhc3MgYSBmdW5j
+dGlvbgovLyB0byBsb2cgcmVzdWx0cyAoZm9yIGV4YW1wbGU6IHJlcG9ydFdl
+YlZpdGFscyhjb25zb2xlLmxvZykpCi8vIG9yIHNlbmQgdG8gYW4gYW5hbHl0
+aWNzIGVuZHBvaW50LiBMZWFybiBtb3JlOiBodHRwczovL2JpdC5seS9DUkEt
+dml0YWxzCnJlcG9ydFdlYlZpdGFscygpOwo=
